@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora v2.0</title>
+</head>
+<body>
+    <main>
+        <h1>Calculadora v2.0</h1>
+        <form action="calculadora2.html" method="GET" name="formCalculadora" onsubmit="calcular();">
+            <div>
+                <label for="numero1"> Primeiro número: </label>
+                <input type="text" name="num1" id="numero1" placeholder="Digite o primeiro número...">        
+            </div>
+            <div>
+                <label for="numero2"> Segundo número: </label>
+                <input type="text" name="num2" id="numero2" placeholder="Digite o segundo número...">        
+            </div>
+            <div>
+                <input type="radio" name="oper" id="op-mais" value="+">
+                <label for="op-mais"> Adição </label>
+
+                <input type="radio" name="oper" id="op-menos" value="-">
+                <label for="op-menos"> Subtração </label>
+
+                <input type="radio" name="oper" id="op-divisao" value="/">
+                <label for="op-divisao"> Divisão </label>
+
+                <input type="radio" name="oper" id="op-multiplicacao" value="x">
+                <label for="op-multiplicacao"> Multiplicação </label>
+            </div>
+            <div>
+                <input type="submit" value="Calcular">
+                <input type="reset" value="Limpar Campos">
+            </div>
+           
+
+
+
+        </form>
+    </main>
+  <script src="js/calculadora2.js"></script>  
+</body>
+</html>
