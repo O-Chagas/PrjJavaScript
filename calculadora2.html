@@ -12,11 +12,11 @@
         <form action="calculadora2.html" method="GET" name="formCalculadora" onsubmit="calcular();">
             <div>
                 <label for="numero1"> Primeiro número: </label>
-                <input type="text" name="num1" id="numero1" placeholder="Digite o primeiro número...">        
+                <input type="text" name="num1" id="numero1" placeholder="Digite o primeiro número..." class="form-input">        
             </div>
             <div>
                 <label for="numero2"> Segundo número: </label>
-                <input type="text" name="num2" id="numero2" placeholder="Digite o segundo número...">        
+                <input type="text" name="num2" id="numero2" placeholder="Digite o segundo número..." class="form-input">        
             </div>
             <div>
                 <input type="radio" name="oper" id="op-mais" value="+">
@@ -34,12 +34,20 @@
             <div>
                 <input type="submit" value="Calcular">
                 <input type="reset" value="Limpar Campos">
+                <input type="button" value="Mostrar Resultado" onclick="calcular();">
             </div>
-           
-
-
-
+            
         </form>
+
+        <div>
+            <label for="resultado">Resultado: </label>
+            <input type="text" name="result" id="resultado">
+        </div>
+
+        <p id='pResultado'>
+
+        </p>
+
     </main>
   <script src="js/calculadora2.js"></script>  
 </body>
